@@ -14,6 +14,19 @@ a {
   text-decoration: none;
   color: black;
 }
+.selected {
+  color: var(--blue-color);
+}
+.selected::before {
+  /* хз как это делать, это как бы,
+  ну, на этом наши полномочия всё */
+  content: '';
+  background-color: var(--blue-color);
+  width: 100%;
+  height: 4px;
+  bottom: 5px;
+  /* не робе( */
+}
 .container {
 max-width: 1170px;
 margin: 0 auto;
@@ -149,8 +162,8 @@ margin: 0 auto;
   position: absolute;
   width: 30px;
   height: 30px;
-  top: 30px;
-  right: 30px;
+  top: 8px;
+  right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
@@ -162,7 +175,7 @@ margin: 0 auto;
   height: 2px;
   top: 13px;
   right: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 1);
   transform: rotate(45deg);
 }
 
@@ -174,16 +187,12 @@ margin: 0 auto;
   height: 2px;
   top: 13px;
   right: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 1);
   transform: rotate(-45deg);
 }
 
 .modal-close:hover {
   background-color: var(--blue-color);
-}
-
-.modal-close-btn::after {
-  
 }
 /* WHAT WE DO */
 .what-we-do {
@@ -491,15 +500,6 @@ margin: 0 auto;
   margin-right: auto;
   overflow: hidden;
 }
-.box-item1 {background: url(../img/pf1.jpg);}
-.box-item2 {background: url(../img/pf2.jpg);}
-.box-item3 {background: url(../img/pf3.jpg);}
-.box-item4 {background: url(../img/pf4.jpg);}
-.box-item5 {background: url(../img/pf5.jpg);}
-.box-item6 {background: url(../img/pf6.jpg);}
-.box-item7 {background: url(../img/pf7.jpg);}
-.box-item8 {background: url(../img/pf8.jpg);}
-.box-item9 {background: url(../img/pf9.jpg);}
 
 .pf-item:hover .overlay {
   transform: translatey(0);
